@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddle boarding</title>
+    <style>
+        h1{
+            color:#1F6F8B;
+            text-decoration:none;
+            font-weight:100;
+            text-align:center;
+            font-family:cursive;
+        }
+        h2{
+            color:#1F6F8B;
+            text-decoration:none;
+            font-weight:100;
+            text-align:center;
+            font-family:cursive;
+        }  
+        p{
+            color:blueviolet;
+            background:#FAE0DF;
+            border-radius:30px;
+            font-weight:300;
+            text-align:center;
+            font-family:monospace;
+            font-size:16px;
+            margin: 35px;
+            padding:20px,50px;
+            display: block;
+            
+            
+        }
+        img{
+            display: block;
+            margin:auto;
+            width:500px;
+        }
+        hr{
+            border:2px dotted #1F6F8B;
+
+        }
+        h3{
+            color:blueviolet;
+            text-align:center;
+            font-weight:200;
+            font-family:monospace;
+        }
+        button{
+            display:block;
+            margin:20px auto;
+            border:2px solid #1F6F8B;
+            background:#DBF6E9;
+            color:#54E346;
+            font-size:18px;
+            line-height:24px;
+            padding:16px 24px;
+            border-radius:30px;
+            transition:all 200ms ease-in-out;
+            box-shadow: rgba(37,39,89, 0.08) 0px,8px,8px,0px;
+            cursor:pointer;
+            }
+       button:hover{
+            background:#ffff;
+            color:#54E346;
+            border:2px solid #1F6F8B;
+        }
+        ul{
+            list-style:none;
+            padding:0;
+            text-align:center;
+            
+        }
+        li{
+            text-align:center;
+            font-size:18px;
+            display:inline;
+            padding:15px;
+        }
+        .learn-more{
+            color:#54E346;
+            text-align: center;
+            font-size:20px;
+            font-family:monospace;
+        }
+        .buy-one{
+            color:#54E346;
+            text-align:right;
+            font-size:20px;
+            font-family:monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <strong>Start Paddleboarding Now</strong>
+
+    </h1>
+<hr>
+</br>
+<h2>Why should I?</h2>
+<p>
+    <em>Stand up paddle boarding (SUP)</em>
+     offers a fun way to play on the water, with the added benefit of a 
+    full-body workout.
+    And, since you stand at full height on your board, 
+    it gives you a unique vantage point for viewing 
+    what's down under the water and out on the horizon. You can also get the benefit of being on the water
+    without buying an expensive boat, a.k.a Break Out Another Thousand. Unless you have what it takes to 
+    own a boat, this alternative will get you on the water without the headache of owning a boat. 
+</p>
+<p>
+    I started paddle boarding while I was on a camping trip with a few friends. One of them brought 
+    an inflatable paddle board and let me use it. The first time you have to find your sea legs 
+    but once you have your balance and start paddling, it's easy to get the hang of. I was obsessed
+    after my first time and wanted to find new bodys of water to explore. I live in Virginia near 
+    Washington, DC and you can find me  paddling on the Occoquan river, resevoir (fountain head) 
+    and so many more places. I woke up on a beautiful sunny day, searched where to paddle board in Virginia,
+    and if it was under 30 miles away from me; I'm game and I drove there. It's serene, peaceful, and 
+    cathartic to those who are closet philosophers.  
+</p>
+  
+
+
+
+</p>
+<hr>
+<img src="https://startpaddle.com/wp-content/uploads/2018/07/paddle-boarding-lake-como-3.JPG"
+width="600">
+</br>
+<ul>
+<li>
+    <a href="https://www.standupjournal.com/2017/12/07/5-reasons-start-stand-up-paddleboarding/" target="_blank" class="learn-more">
+    learn more</a> 
+</li>
+<li>
+    <a href="https://www.irockersup.com/" target="_blank" class="buy-one">
+    Buy one Now</a>
+</li>
+</ul>
+</a>
+</br>
+
+<button>Go Paddle Board!</button>
+<h3>
+    coded by: Ilana Rozin
+    
+</h3>
+
+
+
+
+
+</body>
+<script>
+    function goPaddle(){
+    let distance=prompt("How many miles do you live from a Lake?");
+    let water=prompt("What Lake do you live near?");
+    let heading= document.querySelector("h1");
+    
+    if (distance<30){
+        heading.innerHTML=
+    ("Go"+" "+ "paddle"+" "+ "in"+" "+ water);
+    }else{
+        heading.innerHTML=
+        ("Find a Lake closer to you");
+        
+    }
+}
+    let goButton=document.querySelector("button");
+    goButton.addEventListener("click", goPaddle);
+
+</script>
+</html>
